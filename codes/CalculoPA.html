@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marininha</title>
+</head>
+<body>
+    <button onclick="calcAn()">Cálculo do An</button><br><br>
+    <button onclick="calcA1()">Cálculo do A1</button><br><br>
+    <button onclick="calcR()">Cálculo do R</button><br><br>
+    <button onclick="calcN()">Cálculo do N</button><br><br><br><br>
+    <input type="date"><br><br>
+    <input type="email" placeholder="Digite seu email"><br>
+    <input type="password" placeholder="Digite sua senha"><br><br>
+    <a href="https://br.pinterest.com/pirlimp/hamsters/">Caminho da felicidade!!!</a>
+</body>
+</html>
+<script>
+    function calcAn(){
+        var a1 = Number(prompt("Digite o valor de a1"));
+        var n = Number(prompt("Digite o valor de n"));
+        var r = Number(prompt("Digite o valor de r"));
+        var an = a1 + (n-1) * r;
+        alert(an);
+    }
+    function calcA1(){
+        var an = Number(prompt("Digite o valor de an"));
+        var n = Number(prompt("Digite o valor de n"));
+        var r = Number(prompt("Digite o valor de r"));
+        var a1 = an - (n-1) * r;
+        alert(a1);
+    }
+    function calcR(){
+        var an = Number(prompt("Digite o valor de an"));
+        var a1 = Number(prompt("Digite o valor de a1"));
+        var n = Number(prompt("Digite o valor de n"));
+        var r = (an-a1)/(n-1);
+        alert(r);
+    }
+    function calcN(){
+        var an = Number(prompt("Digite o valor de an"));
+        var a1 = Number(prompt("Digite o valor de a1"));
+        var r = Number(prompt("Digite o valor de r"));
+        var n = 1+ ((an + a1)/r);
+        alert(n);
+    }
+
+</script>
